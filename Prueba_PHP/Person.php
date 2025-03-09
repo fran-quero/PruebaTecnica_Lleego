@@ -73,6 +73,34 @@
             $this->email = $email;
         }
 
+        //Añadido los metodos Getter
+        /**
+         * Devuelve el nombre de la persona.
+         *
+         * @return string El nombre de la persona.
+         */
+        public function getName(): string {
+            return $this->name;
+        }
+
+        /**
+         * Devuelve la edad de la persona.
+         *
+         * @return int La edad de la persona.
+         */
+        public function getAge(): int {
+            return $this->age;
+        }
+
+        /**
+         * Devuelve el email de la persona.
+         *
+         * @return string El correo electrónico de la persona.
+         */
+        public function getEmail(): string {
+            return $this->email;
+        }
+
 
     }
 
