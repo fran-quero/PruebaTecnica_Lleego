@@ -36,6 +36,36 @@ window.onload = function(){
     }
 
 
-    
+    //2. Invertir una cadena de texto
+    /**
+     * Invertir una cadena de texto
+     * 
+     * @param {string} entrada Cadena de entrada que se quiere inveritr 
+     * @returns {string} Devuelve la cadena invertida
+     */
+    function invertirCadena(entrada){
+
+        //Cada caracter del string ocupa una posicion del array
+        entrada = entrada.split("");
+
+        //Invierto el array
+        entrada = entrada.reverse();
+
+        //Devuelvo el array unido
+        return entrada.join("");
+    }
+
+    //Prueba de la funcion 2
+    document.getElementById("ej2").onclick = function(){
+
+        let entrada = document.getElementById("entrada_ej2");
+
+        //Muestro en el parrafo el resultado
+        document.getElementById("salida_ej2").value = invertirCadena(entrada.value);
+
+        //Limpio el campo de entrada
+        entrada.value="";
+
+    }
 
 }
