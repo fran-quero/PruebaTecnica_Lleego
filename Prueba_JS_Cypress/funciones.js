@@ -68,4 +68,22 @@ window.onload = function(){
 
     }
 
+    //3. Recorrer un array con do...while y detenerse en un valor específico
+    let mesesAño = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto',
+        'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+
+    let i=0;
+
+    do{
+        //Imprimimos en consola
+        console.log(mesesAño[i]);
+        i++;
+    
+        //Primero se comprueba que esa iteracion no coincida con julio, si coincide acaba el bucle 
+        //(tambien comprobamos la i para que no llege a ser mas grande que el array aunque sepamos que no va a pasar)
+    }while(mesesAño[i]!="Julio" && i<mesesAño.length);
+
+    
+
 }
