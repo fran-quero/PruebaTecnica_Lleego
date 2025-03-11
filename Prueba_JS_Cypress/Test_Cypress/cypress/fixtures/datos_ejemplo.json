@@ -1,0 +1,11 @@
+{
+    "ejemplo1":{
+        
+        "origen": "Madrid",
+        "destino": "Mï¿½LAGA MARï¿½A ZAMBRANO",
+        "fecha_ida": "1745791200000",
+        "fecha_vuelta": "1745964000000",
+        "pasajeros": "2 adultos"
+        
+    }
+}

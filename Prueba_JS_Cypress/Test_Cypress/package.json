@@ -1,0 +1,14 @@
+{
+  "name": "test_cypress",
+  "version": "1.0.0",
+  "description": "Prueba tecnica Lleego, uso de Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francisco Javier Quero Henares",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.1.0"
+  }
+}
