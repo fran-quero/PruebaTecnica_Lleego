@@ -59,16 +59,29 @@ describe("Prueba buscador Renfe", () => {
         //Asignar pasajeros
         cy.get("#passengersSelection").click({ force: true });
 
+        cy.wait(500)
+
         //Añadimos uno al adulto
         cy.get('[aria-label="añadir pasajero adulto"] > .rf-passengers-alternative__btn-ico').click();
 
         cy.wait(500)
 
-        //No recoge correctamente el boton de seleccionar
-        cy.get("button[title='Seleccionar']").click();
+        //Recogemos el boton para aceptar los cambios en pasajeros y le damos click
+        cy.get("button.rf-passengers-alternative__button-list.rf-passengers-alternative__button-list--primary").click({force:true});
 
-
+        //Recogemos el boton de buscar billetos y le damos click
+        cy.get('#ticketSearchBt').click({forze:true});
         
+
+        // Cambiamos de origen a "https://venta.renfe.com"
+        cy.origin('https://venta.renfe.com', () => {
+
+          //Comprobamos que la cargar la pagina se encuentre un campo clave visible
+          cy.get("#stv-tab", { timeout: 20000 }).should("be.visible"); 
+
+        });
+
+
 
        
         
